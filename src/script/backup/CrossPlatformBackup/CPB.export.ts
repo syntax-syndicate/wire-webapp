@@ -176,7 +176,7 @@ export const exportCPBHistoryFromDatabase = async ({
           return;
         }
 
-        const metaData = buildMetaData(assetParseData.content_type, assetParseData.info);
+        const metaData = buildMetaData(assetParseData.content_type, assetParseData.info, assetParseData.meta);
 
         const asset = new BackupMessageContent.Asset(
           assetParseData.content_type,
